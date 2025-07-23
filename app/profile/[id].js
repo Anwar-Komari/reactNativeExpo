@@ -25,13 +25,13 @@ export default function Profile() {
 
   const fetchUserData = async () => {
     try {
-      // Fetch user details
+      
       const userResponse = await fetch(
         `https://jsonplaceholder.typicode.com/users/${id}`
       );
       const userData = await userResponse.json();
 
-      // Fetch user posts
+      
       const postsResponse = await fetch(
         `https://jsonplaceholder.typicode.com/posts?userId=${id}`
       );
@@ -62,7 +62,7 @@ export default function Profile() {
           backgroundColor="#2196F3"
           translucent={false}
         />
-        {/* Custom Header untuk Loading - Consistent with Home */}
+        
         <View style={styles.customHeader}>
           <View style={styles.headerContent}>
             <Text style={styles.title}>Loading...</Text>
@@ -88,7 +88,7 @@ export default function Profile() {
           backgroundColor="#2196F3"
           translucent={false}
         />
-        {/* Custom Header untuk Error - Consistent with Home */}
+
         <View style={styles.customHeader}>
           <View style={styles.headerContent}>
             <Text style={styles.title}>Error</Text>
@@ -145,7 +145,7 @@ export default function Profile() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollViewContent}
       >
-        {/* Profile Avatar Section */}
+        
         <View style={styles.profileSection}>
           <View style={styles.profileAvatar}>
             <Text style={styles.profileAvatarText}>
@@ -154,7 +154,7 @@ export default function Profile() {
           </View>
         </View>
 
-        {/* Contact Info Card */}
+        
         <View style={styles.sectionCard}>
           <Text style={styles.sectionTitle}>Contact Information</Text>
 
@@ -189,7 +189,7 @@ export default function Profile() {
           </View>
         </View>
 
-        {/* Address Card */}
+       
         <View style={styles.sectionCard}>
           <Text style={styles.sectionTitle}>Address</Text>
           <View style={styles.addressContainer}>
@@ -207,7 +207,7 @@ export default function Profile() {
           </View>
         </View>
 
-        {/* Company Card */}
+        
         <View style={styles.sectionCard}>
           <Text style={styles.sectionTitle}>Company</Text>
           <View style={styles.companyContainer}>
@@ -219,7 +219,7 @@ export default function Profile() {
           </View>
         </View>
 
-        {/* Posts Section */}
+      
         <View style={styles.sectionCard}>
           <View style={styles.postsHeader}>
             <Text style={styles.sectionTitle}>Recent Posts</Text>
