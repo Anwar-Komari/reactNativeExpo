@@ -131,13 +131,6 @@ export default function Profile() {
             @{user.username} • {posts.length} posts
           </Text>
         </View>
-        {/* <TouchableOpacity
-          style={styles.backButton}
-          onPress={() => router.back()}
-          activeOpacity={0.8}
-        >
-          <Text style={styles.backButtonText}></Text>
-        </TouchableOpacity> */}
       </View>
 
       <ScrollView
@@ -281,22 +274,6 @@ const styles = StyleSheet.create({
     color: "#e3f2fd",
     opacity: 0.9,
   },
-  // backButton: {
-  //   backgroundColor: "#ffffff",
-  //   paddingHorizontal: 18,
-  //   paddingVertical: 10,
-  //   borderRadius: 25,
-  //   shadowColor: "#000",
-  //   shadowOffset: { width: 0, height: 2 },
-  //   shadowOpacity: 0.1,
-  //   shadowRadius: 3,
-  //   elevation: 3,
-  // },
-  // backButtonText: {
-  //   color: "#2196F3",
-  //   fontSize: 14,
-  //   fontWeight: "600",
-  // },
   // Profile Avatar Section
   profileSection: {
     alignItems: "center",
